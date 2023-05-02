@@ -1,8 +1,8 @@
 # bootcampjava-git
 Projecto inicial para trabajar con git.
 ## Indices
-* elemento1
-* elemento2
+* como crear un html
+* como publicar en pages
 
 ### otro contenido
-Mas texto
+Para soporte contartar a federicovittorini@gmail.com

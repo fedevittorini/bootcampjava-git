@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: navy;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  color: aquamarine;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: overline;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:visited {
+  color: aqua;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+.p1 {
+  border: 1px black solid;
+}
+
+.bg_green {
+  background-color: greenyellow;
+}
+.color_verde {
+  color: green;
+}
+
+.color_naranja {
+  color: orange;
+}
+
+.color_negro {
+  color: black;
+}
+
+body {
+  background-color: pink;
+}
+
+.img-30pr {
+  width: 30%;
+}
+
+.img-500px {
+  width: 500px;
+}
+
+.div-500px {
+  width: 500px;
+}
+
+.bg-color-pr {
+  background-color: aquamarine;
+}
+
+div .p1 {
+  border: 5px red solid;
+  background-color: red;
+  color: blanchedalmond;
+}
+
+div {
+  padding: 10px;
+}
+
+p {
+  text-align: left;
+}
+
+.align-c {
+  text-align: center;
+}
+
+.align-c {
+  text-align: left;
+  color: brown;
+}
+
+.menuList {
+  list-style: none;
+  margin: 1px 2px 1px 2px;
+  padding: 2px;
+}
+
+.menuList li:first-child a {
+  color: #909090;
+}
+
+.menuList li a {
+  color: white;
+}
+
+
+.menuH li {
+  display: inline-block;
+}
+
+.unsorted-l {
+  list-style: circle;
+}
+
+.d-block {
+  display: inline;
+}
+
+@media(min-width: 800px) and (max-width:949px)  {
+
+  body {
+    background-color: aqua;
+  }
+}
+
+@media(min-width: 950px) and (max-width:1050px) {
+
+  body {
+    background-color: aliceblue;
+  }
+
+  p {
+    color: black;
+  }
+}

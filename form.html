@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Titulo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <a href="http://www.educacionit.com" ><img src="img/logo.svg" /></a>
+        </header>
+        <main>
+            <div>
+
+                <form action="index.html" method="GET" enctype="multipart/form-data" novalidate>
+                    <h3>Newsletter</h3>
+                    <div>
+                        <label>
+                            <p>Nombre de usuario</p>
+                            <input type="text" name="usuario" placeholder="Ingrese su nombre de usuario" required/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Email
+                            <input type="email" name="email" placeholder="aca va el mail" required/>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="number" name="pws" min="5" max="30"/>
+                    </div>
+                    <div>
+                        <label>
+                            Foto perfil
+                            <input type="file" name="fotoPerfil" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Pais
+                            <select name="country">
+                                <option value="-1">---SELECCIONE---</option>
+                                <option value="Ar">Argentina</option>
+                                <option value="Br">Brasil</option>
+                                <option value="Ch">Chile</option>
+                                <option value="Py">Paraguay</option>
+                                <option value="Uy">Uruguay</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Color(es) favorito(s)
+                            <select name="colorFavorito" multiple>
+                                <option value="-1">Ninguno</option>
+                                <option value="Blanco">Blanco</option>
+                                <option value="Negro">Negro</option>
+                                <option value="Amarillo">Amarillo</option>
+                                <option value="Rojo">Rojo</option>
+                                <option value="Azul">Azul</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Descripcion de quien soy
+                            <textarea name="quiensoy" cols="25" rows="10" placeholder="Quien soy?"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Acepto los terminos y condiciones
+                            <input type="radio" name="rangoEdad" value="0-20" /> 0 - 20
+                            <input type="radio" name="rangoEdad" value="21-30"  /> 21 - 30
+                            <input type="radio" name="rangoEdad" value="31"  />  &gt; 31
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Acepto los terminos y condiciones
+                            <input type="checkbox" name="agree" />
+                        </label>
+                    </div>
+                    <div>
+                        <input type="reset" value="Borrar" />
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </div>
+        </main>
+  
+    </body>
+</html>
