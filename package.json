@@ -1,0 +1,20 @@
+{
+  "name": "bootcampjava-git",
+  "version": "1.0.0",
+  "description": "Projecto inicial para trabajar con git.\r ## Indices\r * como crear un html\r * como publicar en pages",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "sass-watch": "sass --watch scss/:css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3"
+  }
+}
