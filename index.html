@@ -58,9 +58,11 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contacto</a>
                 </li>
-
-
               </ul>
+              <div class="container">
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#loginModal">Ingresar</button>
+              </div>
+              
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -70,45 +72,91 @@
         </nav>
       </div>
     </header>
-    <main>
-      <div class="container mt-5 p-2 d-flex">
-        <div class="card m-1">
-          <div class="card-header text-center h-100">
-            <img src="img/java.jpg" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" alt="...">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title"  data-bs-toggle="tooltip" data-bs-title="Abrir Java">Card title 1</h3>
-            <p class="card-text">Some quick example text to <span class="fw-bold text-uppercase"> build</span> on the card title and make up the bulk of the card's content.</p>
-          </div>
+
+    <main class="container">
+        <div id="loginStatus"></div>
+        <div class="row pt-3 pb-3 bg-secondary">
+          <p class="col-3 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facilis repellendus accusantium rem, quas delectus vero reiciendis est porro dolorem odio obcaecati ad ea doloremque nobis officia quisquam temporibus totam.</p>
+          <div class="col-9 d-flex justify-content-around flex-wrap">
+              <div class="card m-1 c-size shadow-lg" id="card-1">
+                <div class="card-header text-center h-100">
+                  <img src="img/java.jpg" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-1" data-bs-title="Tarjeta 1" alt="...">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title" data-bs-toggle="tooltip" data-bs-title="Abrir Java">Card title 1</h3>
+                  <p class="card-text">Some quick example text to <span class="fw-bold text-uppercase"> build</span> on the card <strong>title</strong> and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card m-1 c-size shadow-lg" id="card-2">
+                <div class="card-header text-center h-100">
+                  <img src="img/py.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-2" data-bs-title="Tarjeta 2" alt="...">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Card title 2</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card m-1 c-size shadow-lg" id="card-3">
+                <div class="card-header text-center h-100">
+                  <img src="img/react.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-3" data-bs-title="Tarjeta 3" alt="...">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Card title 3</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card m-1 c-size shadow-lg" id="card-4">
+                <div class="card-header text-center h-100">
+                  <img src="img/js.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-4" data-bs-title="Tarjeta 4" alt="...">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Card title 4</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              
+
+
+
+
+              <div class="card m-1 c-size shadow-lg" id="card-5">
+                <div class="card-header text-center h-100">
+                  <img src="img/java.jpg" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-5" data-bs-title="Tarjeta 5" alt="...">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"  data-bs-toggle="tooltip" data-bs-title="Abrir Java">Card title 5</h3>
+                  <p class="card-text">Some quick example text to <span class="fw-bold text-uppercase"> build</span> on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card m-1 c-size shadow-lg" id="card-6">
+                <div class="card-header text-center h-100">
+                  <img src="img/py.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-6" data-bs-title="Tarjeta 6" alt="...">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Card title 6</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card m-1 c-size shadow-lg" id="card-7">
+                <div class="card-header text-center h-100">
+                  <img src="img/react.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-7" data-bs-title="Tarjeta 7" alt="...">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Card title 7</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card m-1 c-size shadow-lg" id="card-8">
+                <div class="card-header text-center h-100">
+                  <img src="img/js.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-8" data-bs-title="Tarjeta 8" alt="...">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Card title 8</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+         </div>
         </div>
-        <div class="card m-1">
-          <div class="card-header text-center h-100">
-            <img src="img/py.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" alt="...">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card title 1</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card m-1">
-          <div class="card-header text-center h-100">
-            <img src="img/react.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" alt="...">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card title 1</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card  m-1">
-          <div class="card-header text-center h-100">
-            <img src="img/js.png" class="card-img-top img-card" data-bs-toggle="modal" data-bs-target="#cardModal" alt="...">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Card title 1</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
     </main>
 
     <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="false">
@@ -118,25 +166,53 @@
             <h1 class="modal-title fs-5" id="cardModalLabel">Modal title</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-4">Etiqueta: </div>
-              <div class="col-8"> 1</div>
-            </div>
-            <div class="row">
-              <div class="col-4">Auto: </div>
-              <div class="col-8">6</div>
-            </div>
+          <div class="modal-body" >
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" >Save changes</button>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="container bg-primary bg-opacity-50">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="login_frm" class="needs-validation" novalidate>
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                  <div class="col">
+                    <label for="username_fld" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="username_fld" name="username" submitable="true" placeholder="usuario" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="password_fld" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password_fld" name="pwd" submitable="true" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" >Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container bg-primary bg-opacity-50" id="footer-el">
       <div class="row">
         <h4 class="col bg-primary p-2 text-center">Contactanos</h4>
       </div>
@@ -168,26 +244,57 @@
           </ul>
         </div>
         <div class="col-6">
-          <form class="g-3 needs-validation" novalidate>
+          <form id="newsletter-frm" class="g-3 needs-validation" onsubmit="validarFrm('newsletter-frm')" novalidate>
             <div class="form-floating mb-2">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" placeholder="Nombre" class="form-control" id="nombre" aria-describedby="nombre"/>
+              <label for="nombre_fld" class="form-label">Nombre</label>
+              <input type="text" placeholder="Nombre" class="form-control" name="nombre_fld" id="nombre_fld" aria-describedby="nombre" submitable="true" required/>
             </div>
             <div class="form-floating mb-2">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" placeholder="miemail@mail.com" class="form-control" id="email" aria-describedby="email"/>
+              <label for="email_fld" class="form-label">Email</label>
+              <input type="email" placeholder="miemail@mail.com" class="form-control" name="mail_fld" id="email_fld" aria-describedby="email" submitable="true" required/>
             </div>
             <div class="form-floating mb-2">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensaje" aria-describedby="mensajeHelp"></textarea>
+              <label for="message_fld" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message_fld" name="message_fld" submitable="true" aria-describedby="mensajeHelp"></textarea>
             </div>
             <div class="form-floating mb-2">
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="button" class="btn btn-primary" onclick="submitFrm('newsletter-frm')">Enviar</button>
             </div>
           </form>
         </div>
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>
+    <script type="text/javascript">
+      function validarFrm(newsletterFrm) {
+        var frm = document.getElementById(newsletterFrm)
+        if (frm.checkValidity()) {
+          frm.classList.add('was-validated')
+          var data = {}
+          /*var data = {"username":document.getElementById("username_fld").value, 
+          "pwd": document.getElementById("password_fld").value};*/
+          for (var i = 0; i<frm.length; i++) {
+            var field = frm[i]
+            if (field.getAttribute("submitable") == "true") {
+              data[field.name] = field.value;
+            }
+            
+          }
+          console.log(data);
+          const userTxt = document.createTextNode(data["nombre_fld"]);
+          const userH3 = document.createElement("h3")
+          userH3.classList.add("fw-bold");
+          userH3.classList.add("text-decoration-underline");
+          userH3.appendChild(userTxt)
+          document.getElementById('loginStatus').appendChild(userH3);
+      }
+    }
+
+      function submitFrm(frm) {
+        const newsletterFrm = document.getElementById(frm)
+        var event = new CustomEvent("submit", { "detail": "Example of an event" });
+        newsletterFrm.dispatchEvent(event);
+      }
+    </script>
   </body>
 </html>
